@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.dto;
+package com.accounts.sixzerotwo.sixzerotwo.dto;
 
 /**
  * 封装json对象，所有返回结果都使用它

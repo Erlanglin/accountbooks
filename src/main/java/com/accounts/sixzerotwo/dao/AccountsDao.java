@@ -1,27 +1,27 @@
-package com.accounts.sixzerotwo.dao;
+package com.accounts.sixzerotwo.sixzerotwo.dao;
 
+import com.accounts.sixzerotwo.sixzerotwo.entity.Accounts;
 import org.apache.ibatis.annotations.Param;
 
-import com.accounts.sixzerotwo.entity.Accounts;
+import java.util.List;
 
 public interface AccountsDao {
 
 	/**
-	 * 插入预约图书记录
-	 * 
-	 * @param bossId
-	 * @param studentId
-	 * @return 插入的行数
-	 */
-	int insertaccounts(@Param("bossId") long bossId, @Param("studentId") long studentId);
-
-	/**
-	 * 通过主键查询预约图书记录，并且携带图书实体
-	 * 
-	 * @param bossId
-	 * @param studentId
+	 * 通过accountsId查询
+	 *
+	 * @param accountsId
 	 * @return
 	 */
-	Accounts queryByKeyWithboss(@Param("bossId") long bossId, @Param("studentId") long studentId);
+	Accounts queryById(int accountsId);
+
+	/**
+	 * 查询所有用户
+	 *
+	 * @param offset 查询起始位置
+	 * @param limit 查询条数
+	 * @return
+	 */
+	List<Accounts> queryAll(@Param("offset") int offset, @Param("limit") int limit);
 
 }

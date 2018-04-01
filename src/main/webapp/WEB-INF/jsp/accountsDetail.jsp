@@ -12,18 +12,15 @@
     <title>Title</title>
 </head>
 <body>
-<h1>列表：</h1>
+<h1>个人信息：</h1>
 <table>
-    <c:forEach items="${list}" var="u">
-        <tr>
-            <td>${u.bossId}</td>
-            <td>${u.name}</td>
-            <td>${u.accunts}</td>
-            <td>${u.remarks}</td>
-            <td>${u.updateTime}</td>
-        </tr>
-    </c:forEach>
-
+    <tr>
+        <td>${boss.bossId}</td>
+        <td>${boss.name}</td>
+        <td>${boss.accunts}</td>
+        <td>${boss.remarks}</td>
+        <td>${boss.updateTime}</td>
+    </tr>
 </table>
 </body>
 </html>

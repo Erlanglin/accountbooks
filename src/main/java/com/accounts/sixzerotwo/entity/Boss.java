@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.entity;
+package com.accounts.sixzerotwo.sixzerotwo.entity;
 
 import java.sql.Timestamp;
 

@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.entity;
+package com.accounts.sixzerotwo.sixzerotwo.entity;
 
 import java.sql.Timestamp;
 import java.util.Date;
@@ -9,19 +9,19 @@ import java.util.Date;
 
 public class Accounts {
 
-    private int accounts_id;// 账单ID
+    private int accountsId;// 账单ID
 
-    private int boss_id;// 付款人ID
+    private int bossId;// 付款人ID
 
-    private int consumers_id;// 消费者ID
+    private int consumersId;// 消费者ID
 
-    private String activity_name;// 活动名称
+    private String activityName;// 活动名称
 
     private int monetary;// 消费金额
 
-    private Date activity_time;// 活动时间
+    private Date activityTime;// 活动时间
 
-    private Timestamp update_time;// 修改时间
+    private Timestamp updateTime;// 修改时间
 
     // 多对一的复合属性
     private Boss boss;// 图书实体
@@ -29,57 +29,57 @@ public class Accounts {
     public Accounts() {
     }
 
-    public Accounts(int accounts_id, int boss_id, int consumers_id, String activity_name, int monetary, Date activity_time, Timestamp update_time) {
-        this.accounts_id = accounts_id;
-        this.boss_id = boss_id;
-        this.consumers_id = consumers_id;
-        this.activity_name = activity_name;
+    public Accounts(int accountsId, int bossId, int consumersId, String activityName, int monetary, Date activityTime, Timestamp updateTime) {
+        this.accountsId = accountsId;
+        this.bossId = bossId;
+        this.consumersId = consumersId;
+        this.activityName = activityName;
         this.monetary = monetary;
-        this.activity_time = activity_time;
-        this.update_time = update_time;
+        this.activityTime = activityTime;
+        this.updateTime = updateTime;
     }
 
-    public Accounts(int accounts_id, int boss_id, int consumers_id, String activity_name, int monetary, Date activity_time, Timestamp update_time, Boss boss) {
-        this.accounts_id = accounts_id;
-        this.boss_id = boss_id;
-        this.consumers_id = consumers_id;
-        this.activity_name = activity_name;
+    public Accounts(int accountsId, int bossId, int consumersId, String activityName, int monetary, Date activityTime, Timestamp updateTime, Boss boss) {
+        this.accountsId = accountsId;
+        this.bossId = bossId;
+        this.consumersId = consumersId;
+        this.activityName = activityName;
         this.monetary = monetary;
-        this.activity_time = activity_time;
-        this.update_time = update_time;
+        this.activityTime = activityTime;
+        this.updateTime = updateTime;
         this.boss = boss;
     }
 
-    public int getAccounts_id() {
-        return accounts_id;
+    public int getaccountsId() {
+        return accountsId;
     }
 
-    public void setAccounts_id(int accounts_id) {
-        this.accounts_id = accounts_id;
+    public void setaccountsId(int accountsId) {
+        this.accountsId = accountsId;
     }
 
-    public int getBoss_id() {
-        return boss_id;
+    public int getbossId() {
+        return bossId;
     }
 
-    public void setBoss_id(int boss_id) {
-        this.boss_id = boss_id;
+    public void setbossId(int bossId) {
+        this.bossId = bossId;
     }
 
-    public int getConsumers_id() {
-        return consumers_id;
+    public int getconsumersId() {
+        return consumersId;
     }
 
-    public void setConsumers_id(int consumers_id) {
-        this.consumers_id = consumers_id;
+    public void setconsumersId(int consumersId) {
+        this.consumersId = consumersId;
     }
 
-    public String getActivity_name() {
-        return activity_name;
+    public String getactivityName() {
+        return activityName;
     }
 
-    public void setActivity_name(String activity_name) {
-        this.activity_name = activity_name;
+    public void setactivityName(String activityName) {
+        this.activityName = activityName;
     }
 
     public int getMonetary() {
@@ -90,20 +90,20 @@ public class Accounts {
         this.monetary = monetary;
     }
 
-    public Date getActivity_time() {
-        return activity_time;
+    public Date getactivityTime() {
+        return activityTime;
     }
 
-    public void setActivity_time(Date activity_time) {
-        this.activity_time = activity_time;
+    public void setactivityTime(Date activityTime) {
+        this.activityTime = activityTime;
     }
 
-    public Timestamp getUpdate_time() {
-        return update_time;
+    public Timestamp getupdateTime() {
+        return updateTime;
     }
 
-    public void setUpdate_time(Timestamp update_time) {
-        this.update_time = update_time;
+    public void setupdateTime(Timestamp updateTime) {
+        this.updateTime = updateTime;
     }
 
     public Boss getBoss() {
@@ -116,7 +116,7 @@ public class Accounts {
 
     @Override
     public String toString() {
-        return "accounts [accounts_id=" + accounts_id + ", boss_id=" + boss_id + ", consumers_id=" + consumers_id + "activity_name=" + activity_name + ", monetary=" + monetary + ", activity_time=" + activity_time + ", update_time=" + update_time + "]";
+        return "accounts [accountsId=" + accountsId + ", bossId=" + bossId + ", consumersId=" + consumersId + "activityName=" + activityName + ", monetary=" + monetary + ", activityTime=" + activityTime + ", updateTime=" + updateTime + "]";
     }
 
 }

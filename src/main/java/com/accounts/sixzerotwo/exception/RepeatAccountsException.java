@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.exception;
+package com.accounts.sixzerotwo.sixzerotwo.exception;
 
 /**
  * 重复预约异常
