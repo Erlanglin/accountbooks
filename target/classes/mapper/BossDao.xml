@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.accounts.sixzerotwo.dao.bossDao">
+<mapper namespace="com.accounts.sixzerotwo.dao.BossDao">
 	<!-- 目的：为dao接口方法提供sql语句配置 -->
-	<select id="queryById" resultType="boss" parameterType="int">
+	<select id="queryById" resultType="Boss" parameterType="int">
 		<!-- 具体的sql -->
 		SELECT
 			boss_id,
@@ -18,7 +18,7 @@
 			boss_id = #{bossId}
 	</select>
 	
-	<select id="queryAll" resultType="boss">
+	<select id="queryAll" resultType="Boss">
 		SELECT
 			boss_id,
 			name,
@@ -31,12 +31,4 @@
 			boss_id
 		LIMIT #{offset}, #{limit}
 	</select>
-	
-	<update id="reduceNumber">
-		UPDATE boss
-		SET number = number - 1
-		WHERE
-			boss_id = #{bossId}
-		AND number > 0
-	</update>
 </mapper>

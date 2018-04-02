@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.sixzerotwo.exception;
+package com.accounts.sixzerotwo.exception;
 
 /**
  * 预约业务异常

@@ -1,6 +1,6 @@
-package com.accounts.sixzerotwo.sixzerotwo.dao;
+package com.accounts.sixzerotwo.dao;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Boss;
+import com.accounts.sixzerotwo.entity.Boss;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

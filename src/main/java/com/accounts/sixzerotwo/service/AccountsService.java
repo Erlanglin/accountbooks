@@ -1,6 +1,6 @@
-package com.accounts.sixzerotwo.sixzerotwo.service;
+package com.accounts.sixzerotwo.service;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Accounts;
+import com.accounts.sixzerotwo.entity.Accounts;
 
 import java.util.List;
 
@@ -23,4 +23,13 @@ public interface AccountsService {
 	 * @return
 	 */
 	List<Accounts> getList();
+
+	/**
+	 * 插入账单
+	 *
+	 * @return
+	 */
+	int insert(Accounts accounts);
+
+
 }

@@ -1,8 +1,7 @@
-package com.accounts.sixzerotwo.sixzerotwo.dto;
+package com.accounts.sixzerotwo.dto;
 
-import com.accounts.sixzerotwo.sixzerotwo.enums.AccountsStateEnum;
-import com.accounts.sixzerotwo.sixzerotwo.entity.Accounts;
-
+import com.accounts.sixzerotwo.enums.AccountsStateEnum;
+import com.accounts.sixzerotwo.entity.Accounts;
 /**
  * 封装预约执行后结果
  */

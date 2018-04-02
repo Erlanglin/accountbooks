@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.sixzerotwo.enums;
+package com.accounts.sixzerotwo.enums;
 
 /**
  * 使用枚举表述常量数据字典

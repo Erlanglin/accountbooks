@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../CharlieWebDemo-master/CharlieWebDemo.iml" filepath="$PROJECT_DIR$/../CharlieWebDemo-master/CharlieWebDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/accountbooks.iml" filepath="$PROJECT_DIR$/accountbooks.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ssmblog/ssm.iml" filepath="$PROJECT_DIR$/../ssmblog/ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wxshop/wxShop.iml" filepath="$PROJECT_DIR$/../wxshop/wxShop.iml" />
     </modules>
   </component>
 </project>

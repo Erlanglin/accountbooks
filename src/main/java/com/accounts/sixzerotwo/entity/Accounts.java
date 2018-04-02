@@ -1,10 +1,10 @@
-package com.accounts.sixzerotwo.sixzerotwo.entity;
+package com.accounts.sixzerotwo.entity;
 
 import java.sql.Timestamp;
 import java.util.Date;
 
 /**
- * 预约图书实体
+ * 预约图书实体    // Accounts(accountsId,bossId,consumersId,activityName,monetary,activityTime,updateTime)
  */
 
 public class Accounts {

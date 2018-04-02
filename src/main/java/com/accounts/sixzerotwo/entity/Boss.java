@@ -1,9 +1,9 @@
-package com.accounts.sixzerotwo.sixzerotwo.entity;
+package com.accounts.sixzerotwo.entity;
 
 import java.sql.Timestamp;
 
 /**
- * Boss实体
+ * Boss实体    // Boss(bossId,name,accunts,remarks,updateTime)
  */
 public class Boss {
 

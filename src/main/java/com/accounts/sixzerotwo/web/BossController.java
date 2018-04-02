@@ -1,7 +1,7 @@
-package com.accounts.sixzerotwo.sixzerotwo.web;
+package com.accounts.sixzerotwo.web;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Boss;
-import com.accounts.sixzerotwo.sixzerotwo.service.BossService;
+import com.accounts.sixzerotwo.entity.Boss;
+import com.accounts.sixzerotwo.service.BossService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

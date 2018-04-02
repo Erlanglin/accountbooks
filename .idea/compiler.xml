@@ -9,12 +9,14 @@
         <module name="accountbooks" />
         <module name="CharlieWebDemo" />
         <module name="ssm" />
+        <module name="wxShop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accountbooks" target="1.6" />
       <module name="CharlieWebDemo" target="1.5" />
       <module name="ssm" target="1.7" />
+      <module name="wxShop" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

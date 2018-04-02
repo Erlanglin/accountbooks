@@ -1,7 +1,7 @@
-package com.accounts.sixzerotwo.sixzerotwo.web;
+package com.accounts.sixzerotwo.web;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Accounts;
-import com.accounts.sixzerotwo.sixzerotwo.service.AccountsService;
+import com.accounts.sixzerotwo.entity.Accounts;
+import com.accounts.sixzerotwo.service.AccountsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,4 +42,12 @@ public class AccountsController {
 		return "accountsDetail";
 	}
 
+
+	@RequestMapping(value = "/accountsAdd", method = RequestMethod.POST)
+	@ResponseBody
+	private String accountsAdd(@RequestBody Accounts accounts, Model model) {
+		int insertNum = accountsService.insert(accounts);
+		System.out.println("insertNum:"+insertNum);
+		return "accountsList";
+	}
 }

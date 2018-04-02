@@ -1,4 +1,4 @@
-package com.accounts.sixzerotwo.sixzerotwo.exception;
+package com.accounts.sixzerotwo.exception;
 
 /**
  * 库存不足异常

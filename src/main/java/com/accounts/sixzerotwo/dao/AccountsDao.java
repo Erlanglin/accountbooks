@@ -1,7 +1,8 @@
-package com.accounts.sixzerotwo.sixzerotwo.dao;
+package com.accounts.sixzerotwo.dao;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Accounts;
 import org.apache.ibatis.annotations.Param;
+
+import com.accounts.sixzerotwo.entity.Accounts;
 
 import java.util.List;
 
@@ -16,12 +17,20 @@ public interface AccountsDao {
 	Accounts queryById(int accountsId);
 
 	/**
-	 * 查询所有用户
+	 * 查询所有账单
 	 *
 	 * @param offset 查询起始位置
 	 * @param limit 查询条数
 	 * @return
 	 */
 	List<Accounts> queryAll(@Param("offset") int offset, @Param("limit") int limit);
+
+	/**
+	 * 更新账单
+	 *
+	 * @param accounts
+	 * @return int 更新记录
+	 */
+	int insert(Accounts accounts);
 
 }

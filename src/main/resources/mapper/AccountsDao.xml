@@ -2,6 +2,48 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.accounts.sixzerotwo.dao.accountsDao">
+<mapper namespace="com.accounts.sixzerotwo.dao.AccountsDao">
+    <!-- 目的：为dao接口方法提供sql语句配置 -->
+    <select id="queryById" resultType="Accounts" parameterType="int">
+        <!-- 具体的sql -->
+        SELECT
+            accounts_id,
+            boss_id,
+            consumers_id,
+            activity_name,
+            monetary,
+            activity_time,
+            update_time
+        FROM
+            accounts
+        WHERE
+            accounts_id = #{accounts_id}
+    </select>
+
+    <select id="queryAll" resultType="Accounts">
+        SELECT
+            accounts_id,
+            boss_id,
+            consumers_id,
+            activity_name,
+            monetary,
+            activity_time,
+            update_time
+        FROM
+            accounts
+        ORDER BY
+            accounts_id
+        LIMIT #{offset}, #{limit}
+    </select>
+
+    <select id="update" resultType="int" parameterType="Accounts" >
+        INSERT
+        INTO
+          accounts(boss_id,consumers_id,activity_name,monetary,activity_time,update_time)
+        values
+          (#{Accounts.boss_id},#{Accounts.consumers_id},
+          #{Accounts.activity_name},#{Accounts.monetary},
+          #{Accounts.activity_time},#{Accounts.update_time})
+    </select>
 
 </mapper>

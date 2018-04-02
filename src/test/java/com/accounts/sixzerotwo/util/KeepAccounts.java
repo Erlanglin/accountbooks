@@ -1,4 +1,4 @@
-package com.accounts.util;
+package com.accounts.sixzerotwo.util;
 
 
 import com.accounts.sixzerotwo.dao.BossDao;
@@ -10,6 +10,7 @@ import java.util.Scanner;
 /**
  * Created by Administrator on 2018/4/1/001.
  */
+
 public class KeepAccounts {
 
     public static BossDao bossDao;

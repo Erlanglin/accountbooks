@@ -1,6 +1,6 @@
-package com.accounts.sixzerotwo.sixzerotwo.service;
+package com.accounts.sixzerotwo.service;
 
-import com.accounts.sixzerotwo.sixzerotwo.entity.Boss;
+import com.accounts.sixzerotwo.entity.Boss;
 
 import java.util.List;
 
